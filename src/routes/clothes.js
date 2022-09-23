@@ -30,7 +30,7 @@ router.put('/clothes/:id', async (req, res) => {
 
 router.delete('/clothes/:id', async (req, res) => {
   const { id }= req.params;
-  const deleted = await clothesInterface.destroy(id);
+  const deleted = await clothesInterface.delete(id);
   res.status(200).send(`${deleted} deleted successfully.`);
 });
 
