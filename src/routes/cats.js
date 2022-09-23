@@ -30,7 +30,7 @@ router.put('/cats/:id', async (req, res) => {
 
 router.delete('/cats/:id', async (req, res) => {
   const { id }= req.params;
-  const deleted = await catsInterface.destroy(id);
+  const deleted = await catsInterface.delete(id);
   res.status(200).send(`${deleted} deleted successfully.`);
 });
 

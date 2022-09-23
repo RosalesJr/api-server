@@ -2,7 +2,7 @@
 
 ## Author: Luis Rosales
 
-<!-- [Prod Deployed Server]() -->
+[Prod Deployed Server](https://rosales-api-server.herokuapp.com/)
 ## Problem Domain
 
 A api server inteded to practice server modularization, use of middleware, routes, CRUD, writing tests and overall best practices.
