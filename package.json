@@ -1,0 +1,36 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "db:config": "sequelize init:config",
+    "db:create": "sequelize db:create"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RosalesJr/api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RosalesJr/api-server/issues"
+  },
+  "homepage": "https://github.com/RosalesJr/api-server#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "eslint": "^8.23.1",
+    "express": "^4.18.1",
+    "jest": "^29.0.3",
+    "pg": "^8.8.0",
+    "sequelize": "^6.23.1",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^5.1.1",
+    "supertest": "^6.2.4"
+  }
+}
